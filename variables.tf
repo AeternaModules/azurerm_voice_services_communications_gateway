@@ -33,7 +33,7 @@ EOT
     platforms                              = list(string)
     resource_group_name                    = string
     api_bridge                             = optional(string)
-    auto_generated_domain_name_label_scope = optional(string, "TenantReuse")
+    auto_generated_domain_name_label_scope = optional(string) # Default: "TenantReuse"
     emergency_dial_strings                 = optional(list(string))
     microsoft_teams_voicemail_pilot_number = optional(string)
     on_prem_mcp_enabled                    = optional(bool)
